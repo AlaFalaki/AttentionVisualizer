@@ -138,6 +138,8 @@ class AttentionVisualizer():
         the_html = make_html(the_words, positions, final_score)
         self.out.value = the_html
         
+        del inputs, outputs, the_scores, final_score
+        
         
     def on_dd_change(self, change):
         
