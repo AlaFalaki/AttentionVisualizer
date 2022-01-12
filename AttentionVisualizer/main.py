@@ -3,7 +3,7 @@
 
 # In[1]:
 
-
+import gc
 import nltk
 import ipywidgets as widgets
 import torch
@@ -139,6 +139,7 @@ class AttentionVisualizer():
         self.out.value = the_html
         
         del inputs, outputs, the_scores, final_score
+        gc.collect()
         
         
     def on_dd_change(self, change):
