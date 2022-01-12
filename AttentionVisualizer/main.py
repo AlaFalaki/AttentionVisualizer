@@ -4,8 +4,9 @@
 # In[1]:
 
 
-import torch
+import nltk
 import ipywidgets as widgets
+import torch
 from nltk.corpus import stopwords
 from transformers import (
     AutoModel,
