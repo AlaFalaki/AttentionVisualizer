@@ -32,6 +32,8 @@ class AttentionVisualizer():
         self.model_name = "roberta-base"
         self.model      = AutoModel.from_pretrained(self.model_name)
         self.tokenizer  = AutoTokenizer.from_pretrained(self.model_name)
+        
+        nltk.download('stopwords')
         self.stop_words   = list(stopwords.words('english'))
 
         ###############
