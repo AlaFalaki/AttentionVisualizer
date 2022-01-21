@@ -5,7 +5,7 @@ import torch
 # Some words will break down during tokenization (like "going" to "go"+"ing"), and
 # we need to loop through the token_ids and say (for example) indexes 10 and 11  
 # corresponds with the word "going". We do the same thing to find the locations 
-# of [dot] tokens as well.
+# of [dot] tokens and stop words as well.
 #
 # Then we can use these positions to either calculate the score of a multi-part
 # word, or ignore the [dot] tokens.
