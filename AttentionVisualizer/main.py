@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
 import gc
 import nltk
 import ipywidgets as widgets
@@ -14,18 +12,16 @@ from transformers import (
 )
 from IPython.core.display import display, HTML
 
-
-# In[2]:
-
-
 from .utils import find_positions, make_the_words, get_sample_article, scale, make_html
 
 
-# In[3]:
 
 
 class AttentionVisualizer():
-    
+    #--------------------------------------------------------------------------------
+    # The init function will load the RoBERTa model/tokenizer as well as the NLTK library.
+    # It also define all the needed UI elements,
+    #--------------------------------------------------------------------------------
     def __init__(self):
         super().__init__()
         
@@ -36,9 +32,9 @@ class AttentionVisualizer():
         nltk.download('stopwords')
         self.stop_words   = list(stopwords.words('english'))
 
-        ###############
-        # UI Elements #
-        ###############
+        #--------------
+        # UI Elements
+        #--------------
         self.step1_lbl = widgets.HTML(value = f"<h3>Step 1:</h3> Write the input text in the box below.")
         self.input_text = widgets.Textarea(placeholder='Type something', description='Input Text:', rows=10)
         self.step1 = widgets.VBox([self.step1_lbl, self.input_text])
@@ -74,6 +70,9 @@ class AttentionVisualizer():
         
         self.ui = widgets.VBox([self.step1, self.step2])
 
+    #--------------------------------------------------------------------------------
+    # Show the controllers.
+    #--------------------------------------------------------------------------------
     def show_controllers(self, with_sample=False):
         # Hide the options
         self.hide(self.layer_range)
@@ -92,7 +91,10 @@ class AttentionVisualizer():
             self.input_text.value = get_sample_article()
         
         return display(self.ui)
-    
+
+    #--------------------------------------------------------------------------------
+    # Get the input from textarea, do the preprocessing and run it through the model.
+    #--------------------------------------------------------------------------------
     def on_visualize_click(self, c):
         self.out.value =""
         
@@ -141,7 +143,10 @@ class AttentionVisualizer():
         del inputs, outputs, the_scores, final_score
         gc.collect()
         
-        
+    #--------------------------------------------------------------------------------
+    # Show/Hide the range slider or the indivdual dropdown based on user's Layer/Head
+    # selection method.
+    #--------------------------------------------------------------------------------
     def on_dd_change(self, change):
         
         if change['type'] == 'change' and change['name'] == 'value':
@@ -165,7 +170,10 @@ class AttentionVisualizer():
             else:
                 ind_dd = self.hide(ind_dd)
                 slider = self.hide(slider)
-    
+
+    #--------------------------------------------------------------------------------
+    # A helper function to convert the dropdowns inputs to appropriate format.
+    #--------------------------------------------------------------------------------
     def extract_indexes(self):
         layer = self.layer.value
         head  = self.head.value
@@ -187,11 +195,17 @@ class AttentionVisualizer():
             head_indexes = self.head_ind.value-1, self.head_ind.value
         
         return layer_indexes, head_indexes
-        
+
+    #--------------------------------------------------------------------------------
+    # A helper function to hide an UI element.
+    #--------------------------------------------------------------------------------
     def hide(self, el):
         el.layout.visibility = "hidden"
         return el
 
+    #--------------------------------------------------------------------------------
+    # A helper function to show an UI element.
+    #--------------------------------------------------------------------------------
     def show(self, el):
         el.layout.visibility = None
         return el
