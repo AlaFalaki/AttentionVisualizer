@@ -1,12 +1,22 @@
 
+<a target="_blank" href="https://twitter.com/NLPiation">
+<img src="https://img.shields.io/badge/Author-Twitter-blue" />
+</a>
+<a target="_blank" href="https://pub.towardsai.net/attention-visualizer-package-showcase-highest-scored-words-using-roberta-model-8218658b4447">
+<img src="https://img.shields.io/badge/Blog%20Post-Medium-orange" />
+</a>
+<a target="_blank" href="https://colab.research.google.com/github/AlaFalaki/AttentionVisualizer/blob/main/demo.ipynb">
+<img src="https://colab.research.google.com/assets/colab-badge.svg" />
+</a>
+
 # Attention Visualizer
 
 <p align="center">
-<a href="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/output.png">
-<img width="250" src="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/output.png" />
+<a target="_blank" href="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/output.png">
+<img width="450" src="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/output.png" />
 </a>
-<a href="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/UI.png"">
-<img width="250" src="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/UI.png">
+<a target="_blank" href="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/UI.png"">
+<img width="450" src="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/UI.png">
 </a>
 </p>
 
@@ -20,7 +30,7 @@ Run the library on a Google Colab instance using the [following link](https://co
 
 ## Installation
 
-The package is only hosted on Github for now. You can still use `pip` to install the package. 
+The package is only hosted on Github for now. You can use `pip` to install the package. 
 
 ```bash
   pip install git+https://github.com/AlaFalaki/AttentionVisualizer.git
@@ -39,9 +49,21 @@ obj.show_controllers(with_sample=True)
 ```
 
 
+## Requirements
+
+The package will automatically installs all the requirements.
+
+- pytorch
+- transformers
+- ipywidgets
+- NLTK
+
+
 ## Implementation Details
 
 If you are interested in the project and want to know more, I wrote a blog post on medium that explain the implementation in detail. 
 
-[Attention Visualizer Package: Showcase Highest Scored Words Using RoBERTa Model](https://pub.towardsai.net/attention-visualizer-package-showcase-highest-scored-words-using-roberta-model-8218658b4447)
+<a target="_blank" href"https://pub.towardsai.net/attention-visualizer-package-showcase-highest-scored-words-using-roberta-model-8218658b4447">
+Attention Visualizer Package: Showcase Highest Scored Words Using RoBERTa Model
+</a>
 
