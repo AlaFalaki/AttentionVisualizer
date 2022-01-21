@@ -1,23 +1,19 @@
 
-<a target="_blank" href="https://twitter.com/NLPiation">
+<a href="https://twitter.com/NLPiation">
 <img src="https://img.shields.io/badge/Author-Twitter-blue" />
 </a>
-<a target="_blank" href="https://pub.towardsai.net/attention-visualizer-package-showcase-highest-scored-words-using-roberta-model-8218658b4447">
+<a href="https://pub.towardsai.net/attention-visualizer-package-showcase-highest-scored-words-using-roberta-model-8218658b4447">
 <img src="https://img.shields.io/badge/Blog%20Post-Medium-orange" />
 </a>
-<a target="_blank" href="https://colab.research.google.com/github/AlaFalaki/AttentionVisualizer/blob/main/demo.ipynb">
+<a href="https://colab.research.google.com/github/AlaFalaki/AttentionVisualizer/blob/main/demo.ipynb">
 <img src="https://colab.research.google.com/assets/colab-badge.svg" />
 </a>
 
 # Attention Visualizer
 
 <p align="center">
-<a target="_blank" href="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/output.png">
-<img width="450" src="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/output.png" />
-</a>
-<a target="_blank" href="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/UI.png"">
-<img width="450" src="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/UI.png">
-</a>
+<img width="350" src="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/output.png" />
+<img width="350" src="https://raw.githubusercontent.com/AlaFalaki/AttentionVisualizer/main/images/UI.png">
 </p>
 
 A fun project that turns out as a python package with a simple UI to visualize the self-attention score using the RoBERTa library. It is implemented for IPython Notebook environment with options to ignore tokens like "BOS", "[dot]s", or "stopwords". You can also look at a range or specific Layers/Heads.
@@ -63,7 +59,7 @@ The package will automatically installs all the requirements.
 
 If you are interested in the project and want to know more, I wrote a blog post on medium that explain the implementation in detail. 
 
-<a target="_blank" href"https://pub.towardsai.net/attention-visualizer-package-showcase-highest-scored-words-using-roberta-model-8218658b4447">
+<a href="https://pub.towardsai.net/attention-visualizer-package-showcase-highest-scored-words-using-roberta-model-8218658b4447">
 Attention Visualizer Package: Showcase Highest Scored Words Using RoBERTa Model
 </a>
 
