@@ -65,6 +65,8 @@ Attention Visualizer Package: Showcase Highest Scored Words Using RoBERTa Model
 
 ## Citation
 
+arXiv preprint: <a href="https://arxiv.org/abs/2308.14850">Attention Visualizer Package: Revealing Word Importance for Deeper Insight into Encoder-Only Transformer Models</a>
+
 ```
 @article{ala2023av,
   title={Attention Visualizer Package: Revealing Word Importance for Deeper Insight into Encoder-Only Transformer Models},
