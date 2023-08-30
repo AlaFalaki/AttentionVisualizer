@@ -63,3 +63,13 @@ If you are interested in the project and want to know more, I wrote a blog post 
 Attention Visualizer Package: Showcase Highest Scored Words Using RoBERTa Model
 </a>
 
+## Citation
+
+```
+@article{ala2023av,
+  title={Attention Visualizer Package: Revealing Word Importance for Deeper Insight into Encoder-Only Transformer Models},
+  author={Ala Alam Falaki, Robin Gras},
+  journal={arXiv preprint arXiv:2308.14850},
+  year={2023}
+}
+```
